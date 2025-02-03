@@ -1,0 +1,88 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00bcd4;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: #00bcd4;
+}
+
+.calculate-btn {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #00bcd4;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calculate-btn:hover {
+    background-color: #0097a7;
+}
+
+.result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-field, .calculate-btn {
+        font-size: 0.9rem;
+    }
+
+    .result {
+        font-size: 1rem;
+    }
+}
